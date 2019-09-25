@@ -14,6 +14,7 @@ if ($result->num_rows > 0) {
         session_start();
         $_SESSION['secret_key'] = $row['secret_key'];
         $_SESSION['user_id'] = $row['id'];
+        $_SESSION['full_name'] = $row['FullName'];
         header("Location: ../index.php?loggedin");
     }
 } else {

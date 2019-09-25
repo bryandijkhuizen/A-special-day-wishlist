@@ -12,8 +12,6 @@
 
     <?php include 'view/table.php'; ?>
 
-    <br>
-
     <form action="scripts/add.php" method="POST">
         <div class="field">
             <label class="label">Item</label>
@@ -34,6 +32,8 @@
         </div>
 
     </form>
+
+    <hr>
 </div>
 
 <?php include 'view/footer.php'; ?>

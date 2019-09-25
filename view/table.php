@@ -1,3 +1,5 @@
+<h1>List of: <b><?php echo $_SESSION['full_name']; ?></b> </h1>
+<hr>
 <div class="table-container">
   <table class="table is-bordered">
     <tr>
