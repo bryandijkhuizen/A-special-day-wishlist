@@ -8,7 +8,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 }
 
 $stmt = $conn->prepare("SELECT * FROM user_table WHERE username='$username'");
-$stmt->bind_param("si", $_POST['username'], $_POST['password']);
+$stmt->bind_param("ss", $_POST['username'], $_POST['password']);
 $stmt->execute();
 $result = $stmt->get_result();
 

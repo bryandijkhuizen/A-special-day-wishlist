@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
 } else {
     $secret_key = substr(md5(uniqid(rand(), true)), 0, 8);
     $stmt2 = $conn->prepare("INSERT INTO user_table (FullName, username, password, email, secret_key) VALUES ('$fullname', '$username', '$hashedPassword', '$email', '$secret_key')");
-    $stmt2->bind_param("si", $_POST['username'], $_POST['password'], $_POST['email'], $_POST['fullname'], $secret_key);
+    $stmt2->bind_param("sssss", $_POST['username'], $_POST['password'], $_POST['email'], $_POST['fullname'], $secret_key);
     $stmt2->execute();
     $stmt2->close();
     header("Location: ../login.form.php?successR");

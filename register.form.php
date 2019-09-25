@@ -39,7 +39,7 @@
 
     <br><br>
 
-    <?php include 'includes/messages.php'; ?>
+    <?php include 'includes/messages.inc.php'; ?>
 
 </div>
 

@@ -6,7 +6,7 @@
 
 <div class="main" style="margin: 2.5%">
 
-    <?php include 'includes/messages.php'; ?>
+    <?php include 'includes/messages.inc.php'; ?>
 
     <?php
     if (isset($_SESSION['user_id'])) {
@@ -23,8 +23,7 @@
     <?php
     }
     ?>
+
 </div>
-
-
 
 <?php include 'view/footer.php'; ?>

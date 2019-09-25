@@ -17,8 +17,6 @@
             </a>
             <?php if (isset($_SESSION['user_id'])) {
                 if (!isset($_SESSION['secret_key'])) {
-
-
                     ?>
                     <a class="navbar-item" href="dashboard.php">
                         Dashboard
@@ -27,7 +25,6 @@
                         My Account
                     </a>
                 <?php } else { ?>
-
             <?php }
             } ?>
         </div>

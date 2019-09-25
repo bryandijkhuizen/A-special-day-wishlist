@@ -8,7 +8,7 @@
 
 <div class="main" style="margin: 2.5%">
 
-    <?php include 'includes/messages.php'; ?>
+    <?php include 'includes/messages.inc.php'; ?>
 
     <?php include 'view/table.php'; ?>
 

@@ -1,7 +1,5 @@
 <?php
 
-include 'db/dbh.inc.php';
-
 $user_id = $_SESSION['user_id'];
 
 $stmt = $conn->prepare("SELECT * FROM user_table WHERE id='$user_id'");

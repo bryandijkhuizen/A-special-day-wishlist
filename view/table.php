@@ -1,6 +1,7 @@
 <div class="table-container">
   <table class="table is-bordered">
     <tr>
+      <!-- Table Header. -->
       <th>Prioriteit</th>
       <th>Name</th>
       <th>Description</th>
@@ -16,12 +17,14 @@
       ?>
 
       <tbody class="row_position">
+        <!-- Hier wordt naar verwezen tijdens de drag & drop. Alleen als het het bruidspaar zelf is  -->
 
       <?php
       } else {
         ?>
 
       <tbody>
+        <!-- Als het een gast is wordt het een 'standaard' <tbody> waardoor er geen drop & drag mogelijk is  -->
 
       <?php
       }
@@ -40,6 +43,7 @@
       if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
           ?>
+          <!-- TABLE DATA -->
           <tr id="<?php echo $row['id'] ?>">
             <td><?php echo $row['priority'] ?></td>
             <td><?php echo $row['title'] ?></td>
@@ -61,10 +65,12 @@
   </table>
 </div>
 
-<?php if (!isset($_SESSION['secret_key'])) { ?>
-  <p>There are no items added yet. <br><a href="dashboard.php">Click here to add items.</a></p>
-<?php } else {
-    ?> <p>All items have been bought!</p>
+<div style="margin-left: 2px;">
+  <?php if (!isset($_SESSION['secret_key'])) { ?>
+    <p>There are no items added yet. <br><a href="dashboard.php">Click here to add items.</a></p>
+  <?php } else {
+      ?> <p>All items have been bought!</p>
 <?php
   }
 } ?>
+</div>

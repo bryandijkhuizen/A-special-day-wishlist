@@ -5,7 +5,7 @@ include '../db/dbh.inc.php';
 $secret_key = $_POST['secret_key'];
 
 $stmt = $conn->prepare("SELECT * FROM user_table WHERE secret_key='$secret_key'");
-$stmt->bind_param("si", $_POST['secret_key']);
+$stmt->bind_param("s", $_POST['secret_key']);
 $stmt->execute();
 $result = $stmt->get_result();
 

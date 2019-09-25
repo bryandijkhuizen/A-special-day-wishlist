@@ -81,11 +81,9 @@ if (isset($_GET['success'])) {
 
 <?php
 }
-
 ?>
 
 <?php
-
 if (isset($_GET['successR'])) {
     ?>
     <div class="field">
@@ -94,7 +92,6 @@ if (isset($_GET['successR'])) {
             Sucessfully registered, you can find your unique key in your account.
         </div>
     </div>
-
 <?php
 }
 
