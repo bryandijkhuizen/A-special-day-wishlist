@@ -17,9 +17,11 @@
     <?php
     } else {
         ?>
+
         <center>
             <a class="button is-medium is-bold is-dark" href="login.form.php">Click here to login!</a>
         </center>
+
     <?php
     }
     ?>
