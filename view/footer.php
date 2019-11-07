@@ -1,5 +1,3 @@
-<!-- JQUERY VOOR DE DROP & DRAG  !-->
-
 <script type="text/javascript">
     $(".row_position").sortable({ //zorgt ervoor dat de tabel te verslepen valt.
         delay: 150,

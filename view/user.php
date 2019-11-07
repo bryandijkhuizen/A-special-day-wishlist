@@ -13,7 +13,7 @@ while ($row = $result->fetch_assoc()) {
     <div class="card">
         <header class="card-header">
             <p class="card-header-title">
-                <?php echo $row['FullName']; ?>
+                <?php echo $row['FullName']; ?> & <?php echo $row['partnerName']; ?>
             </p>
             <a href="#" class="card-header-icon" aria-label="more options">
                 <span class="icon">

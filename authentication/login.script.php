@@ -18,6 +18,7 @@ if ($result->num_rows > 0) {
         $db_password = $row['password'];
         $db_id = $row['id'];
         $db_full_name = $row['FullName'];
+        $db_partner_name = $row['partnerName'];
     }
 } else {
     header("Location: ../login.form.php?failed");
@@ -28,6 +29,7 @@ if (md5($password) == $db_password) {
     $_SESSION['user_id'] = $db_id;
     $_SESSION['username'] = $db_username;
     $_SESSION['full_name'] = $db_full_name;
+    $_SESSION['partnerName'] = $db_partner_name;
     header("Location: ../index.php?loggedin");
 } else {
     header("Location: ../login.form.php?failed");

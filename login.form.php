@@ -1,6 +1,9 @@
 <?php include 'view/header.php'; ?>
 
 <div class="main" style="margin: 2.5%">
+    <?php include 'includes/messages.inc.php'; ?>
+
+    <br>
 
     <form action="authentication/login.script.php" method="POST">
         <div class="field">
@@ -25,9 +28,6 @@
 
     <a href="guest_login.form.php">Login as guest</a>
 
-    <br><br>
-
-    <?php include 'includes/messages.inc.php'; ?>
 
 </div>
 

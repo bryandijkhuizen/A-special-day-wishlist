@@ -1,12 +1,20 @@
 <?php include 'view/header.php'; ?>
 
 <div class="main" style="margin: 2.5%">
-
+    <br>
+    <?php include 'includes/messages.inc.php'; ?>
     <form action="authentication/register.script.php" method="POST">
         <div class="field">
             <label class="label">Full Name</label>
             <div class="control">
                 <input class="input" type="text" placeholder="Full Name" id="fullName" name="fullName" required>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Partner Name</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Partner Name" id="partnerName" name="partnerName" required>
             </div>
         </div>
 
@@ -37,9 +45,7 @@
 
     </form>
 
-    <br><br>
 
-    <?php include 'includes/messages.inc.php'; ?>
 
 </div>
 
